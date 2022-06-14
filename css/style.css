@@ -132,3 +132,31 @@ body {
 .swiper-slide img {
     border-radius: 20px;
 }
+
+ul{
+    margin:20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+li{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.poster{
+    border-radius: 10px;
+}
+
+.movieInfo{
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+/* #movieContainer {
+    max-width: 600px !important;
+    justify-content: center;
+} */
