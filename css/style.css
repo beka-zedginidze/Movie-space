@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #020916;
+}
+
+.header {
+    background-color: #182131;
+}
+
+.input {
+    background: url("/images/Icon.png") no-repeat right;
+    background-size: 15px;
+    background-position: 90% 50%;
+    cursor: pointer;
+    color: white;
+   
+}
+.search {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.input.input[type=text] {
+    padding: 15px;
+}
+
+.input::placeholder {
+    color: white;
+    position: relative;
+    left: 20%;
+}
+
+.search input {
+    padding: 15px;
+    width: 20%;
+    display: block;
+    margin: auto;
+    padding: 7px;
+    border: none;
+    background-color: #2B3442;
+    border-radius: 30px;
+    outline: none;
+    position: relative;
+    caret-color: white;
+    
+}
+
+.header-right-side {
+    display: flex;
+    float: right;
+    color: white;
+    position: relative;
+    top: -50px;  
+    left: -7%;
+    cursor: pointer;
+}
+.notif {
+    width: 20px;
+}
+.user-img {
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    top: -15px;
+}
+.add {
+    width: 15px;
+}
+.arrow {
+    width: 15px;
+}
+.header-right-side > * {
+    margin-left: 30px;
+}
+
+
+
+
+/* swiper */
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  top: -25px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 60%;
+}
+
+.swiper-slide img {
+    border-radius: 20px;
+}
