@@ -18,37 +18,43 @@ let swiper = new Swiper(".mySwiper", {
     console.log(movies, "data")
     movies.forEach(movie => {
       console.log(movie);
-      let movieList = document.getElementById('moviesUl')
+      let movieList = document.getElementById('movies-ul')
       let movieLi = document.createElement("li");
-      let imgUrl = 'https://image.tmdb.org/t/p/original'
+      let imgUrl = 'https://image.tmdb.org/t/p/original';
 
       movieLi.innerHTML = 
       `
-      <img src="${imgUrl+movie.poster_path}" width="220" class="poster"></img>
-      <div class="movieInfo" id="${movie.id}">
+      <img src="${imgUrl+movie.poster_path}" width="220" id="${movie.popularity}" class="poster"></img>
+      <div class="movie-info" id="${movie.id}">
         <p>Title: ${movie.original_title}</p>
         <p>Rate: ${movie.vote_average}</p>
         <p>Date: ${movie.release_date}</p>
       </div>
-      ` // width shecvale!!!!!
+      `
       
-      document.getElementById(movie.id);
-      // let hoverCss = `#${movie.id}:hover{ display: block; }`;
       movieLi.addEventListener("mouseover", function() {
         let movieHover = document.getElementById(movie.id);
         movieHover.style.display = "block";
-      })
-     
+
+        let blurImg = document.getElementById(movie.popularity);
+        blurImg.style.filter = "blur(5px)";
+        blurImg.style.transition = "2s";
+
+      });
+      
+    
       movieLi.addEventListener("mouseleave", function() {
         let movieHover = document.getElementById(movie.id);
         movieHover.style.display = "none";
-      })
+
+        let blurImg = document.getElementById(movie.popularity);
+        blurImg.style.filter = "blur(0px)";
+        blurImg.style.transition = "2s";
+
+        
+      });
      
-
-
       movieList.appendChild(movieLi);
     });
 
-  }
-
-
+}

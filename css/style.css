@@ -76,10 +76,6 @@ body {
 }
 
 
-
-
-/* swiper */
-
 html,
 body {
   position: relative;
@@ -102,8 +98,6 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -143,20 +137,36 @@ ul{
 
 li{
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 
 .poster{
     border-radius: 10px;
 }
 
-.movieInfo{
+.movie-info{
     position: absolute;
+    left: 0;
+    right: 0;
     top: 0;
+    bottom: 0;
+    margin: auto;
     display: none;
+    color: white;
+    margin-top: 70px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    
 }
 
-/* #movieContainer {
-    max-width: 600px !important;
-    justify-content: center;
-} */
+.movie-info p{
+    margin-top: 7px;
+
+}
+
+.all-movies {
+    color: white;
+    margin-left: 45px;
+}
+
