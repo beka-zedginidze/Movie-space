@@ -37,7 +37,7 @@ let swiper = new Swiper(".mySwiper", {
         movieHover.style.display = "block";
 
         let blurImg = document.getElementById(movie.popularity);
-        blurImg.style.filter = "blur(5px)";
+        blurImg.style.filter = "blur(10px)";
         blurImg.style.transition = "2s";
 
       });
